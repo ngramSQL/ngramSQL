@@ -10,8 +10,8 @@ from st_aggrid import GridOptionsBuilder, AgGrid
 
 import plotly.express as px
 
-from ngramsql.core.application import Application
-from ngramsql.core.plugin import BasePlugin
+from core.application import Application
+from core.plugin import BasePlugin
 
 
 class DemoPlugin(BasePlugin):

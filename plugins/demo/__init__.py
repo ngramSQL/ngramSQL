@@ -1,1 +1,1 @@
-from ngramsql.plugins.demo.plugin import DemoPlugin
+from plugins.demo.plugin import DemoPlugin

@@ -10,8 +10,8 @@ from pyspark.sql.functions import lit, array, split, array_contains, collect_set
     collect_list
 from pyspark.sql.types import StringType, ArrayType, IntegerType
 
-from ngramsql.core.application import Application
-from ngramsql.core.plugin import BasePlugin
+from core.application import Application
+from core.plugin import BasePlugin
 
 
 class NgramListsPlugin(BasePlugin):

@@ -1,1 +1,1 @@
-from ngramsql.plugins.google_books.plugin import GoogleBooksPlugin
+from plugins.google_books.plugin import GoogleBooksPlugin

@@ -34,7 +34,7 @@ class PluginManager:
         self.__udfs = {}
 
     def init_plugins(self):
-        module_infos = pkgutil.iter_modules(self.__plugin_paths, 'ngramsql.plugins.')
+        module_infos = pkgutil.iter_modules(self.__plugin_paths, 'plugins.')
 
         for finder, name, ispkg in module_infos:
             plugin_module = importlib.import_module(name)

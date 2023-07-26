@@ -1,1 +1,1 @@
-from ngramsql.plugins.wordnet.plugin import WordnetPlugin
+from plugins.wordnet.plugin import WordnetPlugin

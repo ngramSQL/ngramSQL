@@ -9,8 +9,8 @@ from pyspark.sql.functions import split, col, element_at, slice, size, regexp_ex
     monotonically_increasing_id, map_from_arrays, lit, udf, collect_list, row_number, ceil, array
 from pyspark.sql.types import IntegerType, ArrayType, LongType
 
-from ngramsql.core.application import Application
-from ngramsql.core.types import Ngram, Corpus, TimeSeries
+from core.application import Application
+from core.types import Ngram, Corpus, TimeSeries
 
 class RawCsvDataSource:
     __PARTS_OF_SPEECH = ['NOUN', 'VERB', 'ADJ', 'ADV', 'PRON', 'DET', 'ADP', 'NUM', 'CONJ', 'PRT', 'X']

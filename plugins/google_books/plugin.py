@@ -1,8 +1,8 @@
 from typing import Dict, Any
 
-from ngramsql.core.application import Application
-from ngramsql.core.plugin import BasePlugin
-from ngramsql.plugins.google_books.fileio import RawCsvDataSource
+from core.application import Application
+from core.plugin import BasePlugin
+from plugins.google_books.fileio import RawCsvDataSource
 
 
 class GoogleBooksPlugin(BasePlugin):

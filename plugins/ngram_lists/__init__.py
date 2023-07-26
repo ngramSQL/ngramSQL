@@ -1,1 +1,1 @@
-from ngramsql.plugins.ngram_lists.plugin import NgramListsPlugin
+from plugins.ngram_lists.plugin import NgramListsPlugin

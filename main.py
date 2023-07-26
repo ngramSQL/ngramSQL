@@ -1,8 +1,8 @@
 import logging
 import streamlit as st
 
-from ngramsql.core.application import Application
-from ngramsql.core.mainframe import MainFrame
+from core.application import Application
+from core.mainframe import MainFrame
 
 
 def main() -> None:

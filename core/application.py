@@ -8,9 +8,9 @@ from pyspark import SparkConf
 from pyspark.sql import SparkSession
 from pyspark.sql.utils import AnalysisException, ParseException
 
-from ngramsql.core.mainframe import MainFrame
-from ngramsql.core.plugin import PluginManager
-from ngramsql.core.util import toml_dict_to_dotted_strings
+from core.mainframe import MainFrame
+from core.plugin import PluginManager
+from core.util import toml_dict_to_dotted_strings
 
 
 class Application:

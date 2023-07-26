@@ -8,8 +8,8 @@ from pyspark.sql.functions import array_contains, explode, lit, collect_list
 from pyspark.sql.types import StringType, StructType, StructField, ArrayType
 from st_aggrid import GridOptionsBuilder, AgGrid
 
-from ngramsql.core.application import Application
-from ngramsql.core.plugin import BasePlugin
+from core.application import Application
+from core.plugin import BasePlugin
 
 
 class WordnetPlugin(BasePlugin):
