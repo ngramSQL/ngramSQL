@@ -1,0 +1,67 @@
+
+[ngramsql.core.spark]
+logConf = "true"
+master = "local[4]"
+
+[ngramsql.core.spark.local]
+dir = "./tmp/"
+
+[ngramsql.core.spark.driver]
+memory = "8g"
+
+[ngramsql.core.spark.executor]
+memory = "512m"
+cores = "2"
+
+[ngramsql.core.spark.sql]
+autoBroadcastJoinThreshold = 268435456
+
+[ngramsql.core.spark.sql.analyzer]
+failAmbiguousSelfJoin = 'false'
+
+[ngramsql.core.spark.sql.parquet]
+filterPushdown = 'true'
+
+[ngramsql.core.spark.sql.execution.arrow.pyspark]
+enabled = "true"
+
+[ngramsql.google_books.corpus.csv]
+identifiers = ['common_english']
+roots = ['corpora/common_english/1/']
+
+[ngramsql.wordnet]
+wordnets = ['odenet:1.4', 'oewn:2021']
+
+[ngramsql.ngramlists]
+lists = ['resources/bible.ngram', 'resources/econ.ngram', 'resources/mit10000.ngram']
+
+[tool.poetry]
+name = "ngramsql-core"
+version = "0.1.0"
+description = ""
+authors = ["ngramSQL Dev <ngramsql@protonmail.com>"]
+readme = "README.md"
+packages = [{include = "ngramsql"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.9.7 || >3.9.7,<4.0"
+pyspark = "^3.3.1"
+toml = "^0.10.2"
+wn = "^0.9.3"
+pyarrow = "^11.0.0"
+streamlit = "^1.18.1"
+streamlit-aggrid = "^0.3.3"
+plotly = "^5.13.1"
+graphframes = "^0.6"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^0.991"
+
+[tool.poetry.scripts]
+main = "ngramsql:main.main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
